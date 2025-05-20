@@ -564,7 +564,7 @@ class TongyiLargeLanguageModel(LargeLanguageModel):
         :return: file ID in Tongyi
         """
         client = OpenAI(
-            api_key=credentials.dashscope_api_key,
+            api_key=credentials["dashscope_api_key"],
             base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
         )
         with tempfile.NamedTemporaryFile(delete=False) as temp_file:
